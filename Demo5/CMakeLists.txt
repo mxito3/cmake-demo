@@ -32,8 +32,8 @@ add_executable(Demo ${DIR_SRCS})
 target_link_libraries (Demo  ${EXTRA_LIBS})
 
 # 指定安装路径
-install (TARGETS Demo DESTINATION bin)
-install (FILES "${PROJECT_BINARY_DIR}/config.h"
+install (TARGETS Demo DESTINATION bin)　　#安装Demo到/usr/local/bin
+install (FILES "${PROJECT_BINARY_DIR}/config.h" #copy config.h到/usr/local/include
          DESTINATION include)
 
 # 启用测试
